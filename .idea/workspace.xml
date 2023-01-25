@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36952139-f02b-4bf0-b4a0-8871d857f5eb" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="36952139-f02b-4bf0-b4a0-8871d857f5eb" name="变更" comment="init(project): initialize the project">
+      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +33,7 @@
     "WebServerToolWindowFactoryState": "true",
     "javascript.nodejs.core.library.configured.version": "16.14.2",
     "javascript.nodejs.core.library.typings.version": "16.18.11",
+    "last_opened_file_path": "E:/Nextjs-仿掘金站点/源代码/juejin_post_service/public",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -42,6 +45,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Nextjs-仿掘金站点\源代码\juejin_post_service\public" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
@@ -52,12 +60,49 @@
       <updated>1674627886889</updated>
       <workItem from="1674627891016" duration="917000" />
       <workItem from="1674629790711" duration="93000" />
-      <workItem from="1674629912492" duration="2264000" />
+      <workItem from="1674629912492" duration="4122000" />
     </task>
+    <task id="LOCAL-00001" summary="init(project): initialize the project">
+      <created>1674632588417</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1674632588417</updated>
+    </task>
+    <task id="LOCAL-00002" summary="init(project): initialize the project">
+      <created>1674632668662</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1674632668662</updated>
+    </task>
+    <task id="LOCAL-00003" summary="init(project): initialize the project">
+      <created>1674632707850</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674632707850</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init(project): initialize the project" />
+    <option name="LAST_COMMIT_MESSAGE" value="init(project): initialize the project" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
