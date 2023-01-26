@@ -4,26 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b103805e-e2e0-446f-b1ab-933dbdd16d43" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/juejin_post_service.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecosystem.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/cover.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/database.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/routerFactory.js" afterDir="false" />
+    <list default="true" id="b103805e-e2e0-446f-b1ab-933dbdd16d43" name="变更" comment="feat(routes): complete CRUD operations for all fields in the database, as well as various filtering APIs for posts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/post.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,8 +116,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674694222957</updated>
-      <workItem from="1674694224831" duration="27195000" />
+      <workItem from="1674694224831" duration="27684000" />
     </task>
+    <task id="LOCAL-00001" summary="feat(routes): complete CRUD operations for all fields in the database, as well as various filtering APIs for posts">
+      <created>1674743886181</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1674743886181</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,5 +133,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="feat(routes): complete CRUD operations for all fields in the database, as well as various filtering APIs for posts" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(routes): complete CRUD operations for all fields in the database, as well as various filtering APIs for posts" />
   </component>
 </project>
