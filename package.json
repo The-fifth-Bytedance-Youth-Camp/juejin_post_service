@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "eslint": "^8.22.0",
+    "get-routes": "^2.1.6",
     "nodemon": "^2.0.20"
   },
   "engines": {

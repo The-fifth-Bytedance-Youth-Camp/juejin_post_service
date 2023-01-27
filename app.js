@@ -5,6 +5,7 @@ const cookieParser = require('cookie-parser');
 const app = require('./src');
 const cron = require('node-cron');
 const fs = require('fs');
+// const { getRoutes } = require('get-routes');
 const logPath = path.join(__dirname, './logs');
 
 // app.use(logger('dev'));
@@ -13,7 +14,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, './public/uploads')));
 
-if (fs.existsSync(logPath)) fs.rmdirSync(logPath);
+if (!fs.existsSync(logPath)) fs.mkdirSync(logPath);
 
 function delDir(dir) {
     let files = fs.readdirSync(dir);
@@ -32,5 +33,9 @@ function delDir(dir) {
 cron.schedule('0 0 0 */2 * *', () => {
     delDir(logPath);
 });
+
+// 获取路由注册表
+// const routes = getRoutes(app);
+// console.log(routes);
 
 module.exports = app;
