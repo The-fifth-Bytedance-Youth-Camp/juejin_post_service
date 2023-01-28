@@ -1,20 +1,37 @@
 const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
-// const logger = require('morgan');
-const app = require('./src');
 const cron = require('node-cron');
 const fs = require('fs');
-// const { getRoutes } = require('get-routes');
-const logPath = path.join(__dirname, './logs');
+const rotatingFileStream = require('rotating-file-stream');
+const morgan = require('morgan');
+const dotenv = require('dotenv');
+dotenv.config();
 
-// app.use(logger('dev'));
+const isProduction = process.env.NODE_ENV === 'production';
+
+const app = express();
+
+const logPath = path.join(__dirname, './logs');
+if (!fs.existsSync(logPath)) fs.mkdirSync(logPath);
+
+const proLogger = morgan('combined', {
+    immediate: false,
+    skip(req, res) {
+        return res.statusCode < 400;
+    },
+    stream: rotatingFileStream(() => `access-${ new Date().toISOString().slice(0, 10) }.log`, {
+        interval: '1d',
+        path: logPath,
+    }),
+});
+
+app.use(isProduction ? proLogger : morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, './public/uploads')));
 
-if (!fs.existsSync(logPath)) fs.mkdirSync(logPath);
 
 function delDir(dir) {
     let files = fs.readdirSync(dir);
@@ -29,13 +46,9 @@ function delDir(dir) {
     }
 }
 
-// 两天清理一次日志
-cron.schedule('0 0 0 */2 * *', () => {
+// 每个月清理一次日志
+cron.schedule('0 0 */30 * *', () => {
     delDir(logPath);
 });
-
-// 获取路由注册表
-// const routes = getRoutes(app);
-// console.log(routes);
 
 module.exports = app;

@@ -3,17 +3,17 @@ const database = require('./database');
 const moment = require('moment/moment');
 const express = require('express');
 
-function withCRUD(table) {
-    const router = express.Router();
-
+function withCRUD(table, router = express.Router()) {
     // 传入 { 字段名: 值 } 插入数据
     router.post('/insert', async (req, res) => {
-        const gmt_create = moment().format('YYYY-MM-DD HH:mm:ss');
+        const gmt_created = moment().format('YYYY-MM-DD HH:mm:ss');
         try {
-            const result = await database.insert(table, { ...req.body, gmt_create });
+            const result = await database.insert(table, {
+                ...req.body, gmt_created, gmt_modified: gmt_created,
+            }).execute();
             res.json({ success: true, result });
         } catch (err) {
-            res.json({ success: false, err });
+            res.json({ success: false, err: err.message });
         }
     });
 
@@ -27,7 +27,7 @@ function withCRUD(table) {
                 .execute();
             res.json({ success: true, result });
         } catch (err) {
-            res.json({ success: false, err });
+            res.json({ success: false, err: err.message });
         }
     });
 
@@ -42,7 +42,7 @@ function withCRUD(table) {
                 .execute();
             res.json({ success: true, result });
         } catch (err) {
-            res.json({ success: false, err });
+            res.json({ success: false, err: err.message });
         }
     });
 
@@ -73,7 +73,7 @@ function withCRUD(table) {
 }
 
 function withBin(table) {
-    const router = withCRUD(table);
+    const router = express.Router();
 
     // 每天删除时间超过30天的数据
     cron.schedule('0 0 0 * * *', () => {
@@ -92,15 +92,16 @@ function withBin(table) {
         try {
             const result = await database
                 .update(table, { is_delete: 1 })
-                .where('id', id);
+                .where('id', id)
+                .execute();
             res.json({ success: true, result });
         } catch (err) {
-            res.json({ success: false, err });
+            res.json({ success: false, err: err.message });
         }
     });
 
     // 获取回收站内的数据
-    router.post('/bin', async (req, res) => {
+    router.get('/bin', async (req, res) => {
         const { page, rows } = req.query;
         const result = await database
             .select('*')
@@ -119,11 +120,11 @@ function withBin(table) {
                 .execute();
             res.json({ success: true, result });
         } catch (err) {
-            res.json({ success: false, err });
+            res.json({ success: false, err: err.message });
         }
     });
 
-    return router;
+    return withCRUD(table, router);
 }
 
 module.exports = { withCRUD, withBin };

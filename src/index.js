@@ -1,8 +1,7 @@
-const express = require('express');
 const postRouter = require('./routes/post');
 const coverRouter = require('./routes/cover');
 const { withBin } = require('./utils/routerFactory');
-const app = express();
+const app = require('../app');
 
 app.use('/post', postRouter);
 app.use('/cover', coverRouter);

@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 
-const app = require('../app');
+const app = require('../src');
 const debug = require('debug')('juejin-post-service:server');
 const http = require('http');
 
