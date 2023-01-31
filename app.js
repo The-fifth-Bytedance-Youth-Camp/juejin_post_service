@@ -8,9 +8,9 @@ const morgan = require('morgan');
 const dotenv = require('dotenv');
 dotenv.config();
 
-const isProduction = process.env.NODE_ENV === 'production';
-
 const app = express();
+
+const isProduction = process.env.NODE_ENV === 'production';
 
 const logPath = path.join(__dirname, './logs');
 if (!fs.existsSync(logPath)) fs.mkdirSync(logPath);
@@ -20,10 +20,12 @@ const proLogger = morgan('combined', {
     skip(req, res) {
         return res.statusCode < 400;
     },
-    stream: rotatingFileStream(() => `access-${ new Date().toISOString().slice(0, 10) }.log`, {
-        interval: '1d',
-        path: logPath,
-    }),
+    stream: rotatingFileStream.createStream(
+        `${ new Date().toISOString().slice(0, 10) }-error.log`,
+        {
+            interval: '1d',
+            path: logPath,
+        }),
 });
 
 app.use(isProduction ? proLogger : morgan('dev'));

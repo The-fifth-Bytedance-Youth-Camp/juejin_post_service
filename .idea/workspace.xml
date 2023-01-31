@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b103805e-e2e0-446f-b1ab-933dbdd16d43" name="变更" comment="feat(routes): add routes map in app.js">
+    <list default="true" id="b103805e-e2e0-446f-b1ab-933dbdd16d43" name="变更" comment="feat(uploads): keep empty folder">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/www" beforeDir="false" afterPath="$PROJECT_DIR$/bin/www" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecosystem.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/ecosystem.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/routerFactory.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/routerFactory.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +44,7 @@
     &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;16.14.2&quot;,
     &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.18.11&quot;,
     &quot;js.last.introduce.type&quot;: &quot;CONST&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Nextjs-仿掘金站点/源代码/juejin_post_service/public/uploads/cache&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -58,6 +54,11 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Nextjs-仿掘金站点\源代码\juejin_post_service\public\uploads\cache" />
+      <recent name="E:\Nextjs-仿掘金站点\源代码\juejin_post_service\public\uploads\webp" />
+      <recent name="E:\Nextjs-仿掘金站点\源代码\juejin_post_service\public\uploads\jpeg" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Nextjs-仿掘金站点\源代码\juejin_post_service" />
       <recent name="E:\Nextjs-仿掘金站点\源代码\juejin_post_service\public\uploads" />
@@ -124,7 +125,9 @@
       <updated>1674694222957</updated>
       <workItem from="1674694224831" duration="27819000" />
       <workItem from="1674780524059" duration="969000" />
-      <workItem from="1674873230213" duration="10387000" />
+      <workItem from="1674873230213" duration="11291000" />
+      <workItem from="1674978364165" duration="11000" />
+      <workItem from="1675153755395" duration="346000" />
     </task>
     <task id="LOCAL-00001" summary="feat(routes): complete CRUD operations for all fields in the database, as well as various filtering APIs for posts">
       <created>1674743886181</created>
@@ -147,7 +150,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674781223887</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat(logger): add morgen logger whith pro and dev mode">
+      <created>1674893886323</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1674893886323</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat(uploads): keep empty folder">
+      <created>1674893973639</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1674893973639</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,6 +185,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="feat(routes): complete CRUD operations for all fields in the database, as well as various filtering APIs for posts" />
     <MESSAGE value="feat(routes): add routes map in app.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(routes): add routes map in app.js" />
+    <MESSAGE value="feat(logger): add morgen logger whith pro and dev mode" />
+    <MESSAGE value="feat(uploads): keep empty folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(uploads): keep empty folder" />
   </component>
 </project>
