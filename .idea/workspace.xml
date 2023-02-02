@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b103805e-e2e0-446f-b1ab-933dbdd16d43" name="变更" comment="feat(uploads): add image uploads to automatically compress with https://tinify.cn">
+    <list default="true" id="b103805e-e2e0-446f-b1ab-933dbdd16d43" name="变更" comment="feat(env): add .env.example file">
       <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +46,7 @@
     "javascript.nodejs.core.library.configured.version": "16.14.2",
     "javascript.nodejs.core.library.typings.version": "16.18.11",
     "js.last.introduce.type": "CONST",
-    "last_opened_file_path": "E:/Nextjs-仿掘金站点/源代码/juejin_post_service",
+    "last_opened_file_path": "E:/Nextjs-仿掘金站点/源代码/juejin_post_service/bin",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -55,6 +57,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Nextjs-仿掘金站点\源代码\juejin_post_service\bin" />
       <recent name="E:\Nextjs-仿掘金站点\源代码\juejin_post_service" />
       <recent name="E:\Nextjs-仿掘金站点\源代码\juejin_post_service\public\uploads\webp" />
       <recent name="E:\Nextjs-仿掘金站点\源代码\juejin_post_service\public\uploads\jpeg" />
@@ -107,6 +110,12 @@
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="npm.dev" />
+      <item itemvalue="npm.start" />
+      <item itemvalue="npm.stop" />
+      <item itemvalue="npm.watch" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="npm.dev" />
@@ -131,7 +140,7 @@
       <workItem from="1675153755395" duration="865000" />
       <workItem from="1675305509334" duration="616000" />
       <workItem from="1675306677774" duration="392000" />
-      <workItem from="1675307931456" duration="3886000" />
+      <workItem from="1675307931456" duration="7598000" />
     </task>
     <task id="LOCAL-00001" summary="feat(routes): complete CRUD operations for all fields in the database, as well as various filtering APIs for posts">
       <created>1674743886181</created>
@@ -182,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675320296191</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat(env): add .env.example file">
+      <created>1675320582447</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1675320582447</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,6 +222,7 @@
     <MESSAGE value="feat(logger): add morgen logger whith pro and dev mode" />
     <MESSAGE value="feat(uploads): keep empty folder" />
     <MESSAGE value="feat(uploads): add image uploads to automatically compress with https://tinify.cn" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(uploads): add image uploads to automatically compress with https://tinify.cn" />
+    <MESSAGE value="feat(env): add .env.example file" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(env): add .env.example file" />
   </component>
 </project>
