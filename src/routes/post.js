@@ -107,6 +107,7 @@ router.post('/delete', async (req, res) => {
 router.get('/watch', (req, res) => {
     const { id } = req.query;
     // code here ...
+    // database.xxx
     res.json({ id });
 });
 
