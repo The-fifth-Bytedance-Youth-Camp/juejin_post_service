@@ -11,9 +11,9 @@ function withCRUD(table, router = express.Router()) {
             const result = await database.insert(table, {
                 ...req.body, gmt_created, gmt_modified: gmt_created,
             }).execute();
-            res.json({ success: true, result });
+            res.json({ code: 200, ...result });
         } catch (err) {
-            res.json({ success: false, err: err.message });
+            res.json({ code: 500, err: err.message });
         }
     });
 
@@ -25,9 +25,9 @@ function withCRUD(table, router = express.Router()) {
                 .delete(table)
                 .where('id', id)
                 .execute();
-            res.json({ success: true, result });
+            res.json({ code: 200, ...result });
         } catch (err) {
-            res.json({ success: false, err: err.message });
+            res.json({ code: 500, err: err.message });
         }
     });
 
@@ -40,9 +40,9 @@ function withCRUD(table, router = express.Router()) {
                 .where('id', id)
                 .where('is_delete', 0)
                 .execute();
-            res.json({ success: true, result });
+            res.json({ code: 200, ...result });
         } catch (err) {
-            res.json({ success: false, err: err.message });
+            res.json({ code: 500, err: err.message });
         }
     });
 
@@ -86,6 +86,25 @@ function withBin(table) {
             .execute();
     });
 
+    router.get('/search', async (req, res) => {
+        const { keyword, field = 'name' } = req.query;
+        let keywordStr = '';
+        keyword.split(' ').forEach(keyword => {
+            keywordStr += `%${ keyword }%`;
+        });
+        try {
+            const result = await database.sql(`
+                SELECT ${ field }
+                FROM ${ table }
+                WHERE ${ field } LIKE '${ keywordStr }'
+                  AND is_delete != 1
+            `).execute();
+            res.json({ code: 200, result: result.map(t => t[field]) });
+        } catch (err) {
+            res.json({ code: 500, err: err.message });
+        }
+    });
+
     // 根据 id 删除数据
     router.post('/delete', async (req, res) => {
         const { id } = req.body;
@@ -94,21 +113,25 @@ function withBin(table) {
                 .update(table, { is_delete: 1 })
                 .where('id', id)
                 .execute();
-            res.json({ success: true, result });
+            res.json({ code: 200, ...result });
         } catch (err) {
-            res.json({ success: false, err: err.message });
+            res.json({ code: 500, err: err.message });
         }
     });
 
     // 获取回收站内的数据
     router.get('/bin', async (req, res) => {
         const { page, rows } = req.query;
-        const result = await database
-            .select('*')
-            .from(table)
-            .where('is_delete', 1)
-            .queryListWithPaging(page, rows);
-        res.json(result);
+        try {
+            const result = await database
+                .select('*')
+                .from(table)
+                .where('is_delete', 1)
+                .queryListWithPaging(page, rows);
+            res.json({ code: 200, ...result });
+        } catch (err) {
+            res.json({ code: 500, err: err.message });
+        }
     });
 
     // 清空回收站
@@ -118,9 +141,9 @@ function withBin(table) {
                 .delete(table)
                 .where('is_delete', 1)
                 .execute();
-            res.json({ success: true, result });
+            res.json({ code: 200, ...result });
         } catch (err) {
-            res.json({ success: false, err: err.message });
+            res.json({ code: 500, err: err.message });
         }
     });
 

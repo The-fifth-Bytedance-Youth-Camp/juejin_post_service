@@ -5,6 +5,8 @@ const cron = require('node-cron');
 const fs = require('fs');
 const rotatingFileStream = require('rotating-file-stream');
 const morgan = require('morgan');
+const cors = require('cors');
+const expressJwt = require('express-jwt');
 const dotenv = require('dotenv');
 dotenv.config();
 
@@ -28,11 +30,24 @@ const proLogger = morgan('combined', {
         }),
 });
 
+// 验证 token 是否过期
+app.use(
+    expressJwt
+        .expressjwt({
+            secret: process.env.JWT_SECRET_KEY,
+            algorithms: [ 'HS256' ],
+        })
+        .unless({
+            // 不需要验证的接口名称
+            path: [ '/favicon.ico', /^\/(theme|codeStyle)\/.*(.)css/, /^\/upload(s)*\/.*/ ],
+        }),
+);
+app.use(cors({ origin: `http://localhost:${ process.env.CORS_ORIGIN_PORT }` }));
 app.use(isProduction ? proLogger : morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, './public/uploads')));
+app.use(express.static(path.join(__dirname, './public')));
 
 
 function delDir(dir) {

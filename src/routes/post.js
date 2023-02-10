@@ -103,12 +103,25 @@ router.post('/delete', async (req, res) => {
     }
 });
 
-// 阅读量统计，请求一次阅读量 +1
-router.get('/watch', (req, res) => {
+// 阅读量统计
+router.get('/watch', async (req, res) => {
     const { id } = req.query;
-    // code here ...
-    // database.xxx
-    res.json({ id });
+    try {
+        const result = await database.sql(`
+            UPDATE post
+            SET watch_num = post.watch_num + 1
+            WHERE id = ?
+        `, [ id ]);
+        res.json({
+            code: 200,
+            ...result,
+        });
+    } catch ({ message }) {
+        res.json({
+            code: 500,
+            msg: message,
+        });
+    }
 });
 
 module.exports = router;
