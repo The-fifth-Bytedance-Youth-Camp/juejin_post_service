@@ -6,6 +6,7 @@ const express = require('express');
 function withCRUD(table, router = express.Router()) {
     // 传入 { 字段名: 值 } 插入数据
     router.post('/insert', async (req, res) => {
+        console.log('==========');
         const gmt_created = moment().format('YYYY-MM-DD HH:mm:ss');
         try {
             const result = await database.insert(table, {
@@ -94,12 +95,12 @@ function withBin(table) {
         });
         try {
             const result = await database.sql(`
-                SELECT ${ field }
+                SELECT *
                 FROM ${ table }
                 WHERE ${ field } LIKE '${ keywordStr }'
                   AND is_delete != 1
             `).execute();
-            res.json({ code: 200, result: result.map(t => t[field]) });
+            res.json({ code: 200, result });
         } catch (err) {
             res.json({ code: 500, err: err.message });
         }

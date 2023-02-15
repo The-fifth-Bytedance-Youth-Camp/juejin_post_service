@@ -21,7 +21,8 @@ function generateRandomEight(str) {
  * 上传图片后自动压缩
  * https://tinify.com
  */
-router.post('/', upload.single('file'), async (req, res) => {
+router.post('/image', upload.single('file'), async (req, res) => {
+    const { downlink } = req.headers;
     const pid = generateRandomEight(uuid.v4());
     try {
         const source = tinify.fromBuffer(req.file.buffer);
@@ -29,9 +30,8 @@ router.post('/', upload.single('file'), async (req, res) => {
         await source.toFile(path.join(uploadsPath, `/webp/${ pid }.webp`));
         res.json({
             code: 200,
-            basicURL,
             pid,
-            url: [ `${ basicURL }/webp/${ pid }.webp`, `${ basicURL }/jpeg/${ pid }.jpeg` ],
+            url: downlink === '4g' ? `${ basicURL }/jpeg/${ pid }.jpeg` : `${ basicURL }/webp/${ pid }.webp`,
         });
     } catch ({ message }) {
         res.json({

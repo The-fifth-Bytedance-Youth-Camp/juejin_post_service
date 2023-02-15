@@ -5,150 +5,54 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b103805e-e2e0-446f-b1ab-933dbdd16d43" name="变更" comment="feat(post): add the cache for edit the post, add the theme system for post">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/a11y-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/a11y-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/agate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/an-old-hope.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/androidstudio.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/arduino-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/arta.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/ascetic.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/atelier-cave-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/atelier-cave-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/atelier-dune-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/atelier-dune-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/atelier-estuary-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/atelier-estuary-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/atelier-forest-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/atelier-forest-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/atelier-heath-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/atelier-heath-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/atelier-lakeside-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/atelier-lakeside-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/atelier-plateau-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/atelier-plateau-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/atelier-savanna-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/atelier-savanna-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/atelier-seaside-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/atelier-seaside-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/atelier-sulphurpool-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/atelier-sulphurpool-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/atom-one-dark-reasonable.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/atom-one-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/atom-one-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/brown-paper.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/brown-papersq.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/codepen-embed.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/color-brewer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/darcula.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/default.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/docco.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/dracula.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/far.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/foundation.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/github-gist.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/github.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/gml.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/googlecode.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/gradient-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/gradient-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/grayscale.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/gruvbox-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/gruvbox-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/hopscotch.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/hybrid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/idea.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/ir-black.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/isbl-editor-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/isbl-editor-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/kimbie.dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/kimbie.light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/lightfair.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/lioshi.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/magula.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/mono-blue.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/monokai-sublime.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/monokai.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/night-owl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/nnfx-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/nnfx.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/nord.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/obsidian.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/ocean.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/paraiso-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/paraiso-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/pojoaque.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/pojoaque.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/purebasic.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/qtcreator_dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/qtcreator_light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/railscasts.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/rainbow.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/routeros.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/school-book.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/school-book.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/shades-of-purple.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/solarized-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/solarized-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/srcery.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/stackoverflow-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/stackoverflow-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/sunburst.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/tomorrow-night-blue.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/tomorrow-night-bright.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/tomorrow-night-eighties.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/tomorrow-night.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/tomorrow.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/vs.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/vs2015.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/xcode.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/xt256.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/codeStyle/zenburn.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme/arknights.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme/arknights.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme/channing-cyan.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme/channing-cyan.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme/cyanosis.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme/cyanosis.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme/github.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme/github.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme/hydrogen.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme/hydrogen.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme/juejin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme/juejin.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme/jzman.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme/jzman.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme/mk-cute.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme/mk-cute.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme/nico.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme/nico.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme_src/arknights.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme_src/channing-cyan.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme_src/cyanosis.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme_src/github.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme_src/hydrogen.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme_src/juejin.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme_src/jzman.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme_src/mk-cute.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme_src/nico.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/cache.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/codeStyle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/theme.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/directoryManger.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/errorCatch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/theme/github-dark.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/cover.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/upload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/www" beforeDir="false" afterPath="$PROJECT_DIR$/bin/www" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/codeStyle/a11y-dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/codeStyle/a11y-light.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/codeStyle/an-old-hope.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/codeStyle/atelier-cave-dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/codeStyle/atelier-cave-light.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/codeStyle/atelier-dune-dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/codeStyle/atelier-dune-light.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/codeStyle/atelier-estuary-dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/codeStyle/atelier-estuary-light.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/codeStyle/atelier-forest-dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/codeStyle/atelier-forest-light.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/codeStyle/atelier-heath-dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/codeStyle/atelier-heath-light.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/codeStyle/atelier-lakeside-dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/codeStyle/atelier-lakeside-light.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/codeStyle/atelier-plateau-dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/codeStyle/atelier-plateau-light.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/codeStyle/atelier-savanna-dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/codeStyle/atelier-savanna-light.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/codeStyle/atelier-seaside-dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/codeStyle/atelier-seaside-light.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/codeStyle/atelier-sulphurpool-dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/codeStyle/atelier-sulphurpool-light.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/codeStyle/atom-one-dark-reasonable.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/codeStyle/github-gist.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/codeStyle/gruvbox-dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/codeStyle/gruvbox-light.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/codeStyle/isbl-editor-dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/codeStyle/isbl-editor-light.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/codeStyle/kimbie.dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/codeStyle/kimbie.light.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/codeStyle/paraiso-dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/codeStyle/paraiso-light.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/codeStyle/stackoverflow-dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/codeStyle/stackoverflow-light.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/codeStyle/tomorrow-night-blue.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/codeStyle/tomorrow-night-bright.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/codeStyle/tomorrow-night-eighties.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/codeStyle/tomorrow-night.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/codeStyle/xt256.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/codeStyle/zenburn.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/cache.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/cache.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/post.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/post.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/website.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/website.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/upload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/errorCatch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/errorCatch.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/routerFactory.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/routerFactory.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -175,38 +79,38 @@
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "true",
-    "javascript.nodejs.core.library.configured.version": "16.14.2",
-    "javascript.nodejs.core.library.typings.version": "16.18.11",
-    "js.last.introduce.type": "CONST",
-    "last_opened_file_path": "E:/Nextjs-仿掘金站点/源代码/juejin_post_service/public/codeStyle",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;16.14.2&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.18.11&quot;,
+    &quot;js.last.introduce.type&quot;: &quot;CONST&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Nextjs-仿掘金站点/源代码/juejin_post_service/public/theme&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Nextjs-仿掘金站点\源代码\juejin_post_service\public\theme" />
       <recent name="E:\Nextjs-仿掘金站点\源代码\juejin_post_service\public\codeStyle" />
       <recent name="E:\Nextjs-仿掘金站点\源代码\juejin_post_service\public\theme_src" />
-      <recent name="E:\Nextjs-仿掘金站点\源代码\juejin_post_service\public\theme" />
       <recent name="E:\Nextjs-仿掘金站点\源代码\juejin_post_service\bin" />
       <recent name="E:\Nextjs-仿掘金站点\源代码\juejin_post_service" />
     </key>
@@ -297,7 +201,15 @@
       <workItem from="1675842782482" duration="580000" />
       <workItem from="1675908283724" duration="11341000" />
       <workItem from="1675989919417" duration="3103000" />
-      <workItem from="1675996033052" duration="23539000" />
+      <workItem from="1675996033052" duration="23885000" />
+      <workItem from="1676077236648" duration="329000" />
+      <workItem from="1676077646221" duration="11317000" />
+      <workItem from="1676278336276" duration="2227000" />
+      <workItem from="1676282998555" duration="619000" />
+      <workItem from="1676292090142" duration="357000" />
+      <workItem from="1676294597233" duration="1797000" />
+      <workItem from="1676336046419" duration="7811000" />
+      <workItem from="1676422579052" duration="3152000" />
     </task>
     <task id="LOCAL-00001" summary="feat(routes): complete CRUD operations for all fields in the database, as well as various filtering APIs for posts">
       <created>1674743886181</created>
@@ -390,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675473593555</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="feat(post): add the cache for edit the post, add the theme system for post">
+      <created>1676043348163</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1676043348164</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

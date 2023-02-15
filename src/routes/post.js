@@ -2,7 +2,9 @@ const { withCRUD } = require('../utils/routerFactory');
 const database = require('../utils/database');
 const fs = require('fs');
 const path = require('path');
-const router = withCRUD('post');
+const moment = require('moment');
+const express = require('express');
+const router = express.Router();
 const uploadsPath = path.join(__dirname, '../../public/uploads');
 
 const findBy = (field, value, page, rows) => {
@@ -124,4 +126,49 @@ router.get('/watch', async (req, res) => {
     }
 });
 
-module.exports = router;
+router.post('/insert', async (req, res) => {
+    const { id, isAdmin } = req.auth;
+    if (!isAdmin) {
+        res.json({
+            code: 304,
+            msg: '没有权限添加文章',
+        });
+    }
+    const gmt_created = moment().format('YYYY-MM-DD HH:mm:ss');
+    const body = req.body;
+    const images = body?.images || [];
+    delete body?.images;
+    const tags = body?.tags;
+    delete body?.tags;
+    try {
+        const result = await database.insert('post', {
+            ...body, author: id, gmt_created, gmt_modified: gmt_created,
+        }).execute();
+        for (const image of images) {
+            await database.insert('image', {
+                post: result?.insertId,
+                image,
+                gmt_created,
+                gmt_modified: gmt_created,
+            }).execute();
+        }
+        for (const tag of tags) {
+            await database.insert('tag_post', {
+                post: result?.insertId, tag, gmt_created,
+                gmt_modified: gmt_created,
+            }).execute();
+        }
+        // 删除缓存
+        await database.delete('cache')
+            .where('id', id)
+            .execute();
+        await database.delete('tag_cache')
+            .where('admin', id)
+            .execute();
+        res.json({ code: 200, ...result });
+    } catch (err) {
+        res.json({ code: 500, err: err.message });
+    }
+});
+
+module.exports = withCRUD('post', router);
